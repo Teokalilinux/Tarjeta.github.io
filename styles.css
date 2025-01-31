@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Sparkling Horizon';
+    src: url('Fonts/sparkling_horizon/Sparkling\ Horizon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declaración para la segunda fuente */
+@font-face {
+    font-family: 'SimpleNote';
+    src: url('Fonts/simple_note/Mocosans-SimpleNote.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilo general para el body */
+body {
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo-piscina-1659793303.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* Sección blanca para cubrir solo la parte superior */
+.white-background {
+    position: absolute;
+    top: 150%;
+
+    /* Posiciona la parte superior del fondo blanco al 50% de la altura */
+    left: 50%;
+    /* Posiciona la parte izquierda del fondo blanco al 50% del ancho */
+    width: 70%;
+    /* Ajusta el ancho deseado */
+    height: 2208px;
+    /* Ajusta la altura deseada */
+    background-color: white;
+    transform: translate(-50%, -50%);
+    /* Desplaza el fondo blanco hacia atrás para centrarlo */
+    z-index: -1;
+    border: 15px solid #1a58cf;
+    /* Borde azul de 5px */
+    border-radius: 60px;
+    /* Asegura que quede detrás del contenido */
+    box-shadow: 0 0 30px 10px rgb(57, 90, 219)
+}
+
+h2 {
+    margin: 0px;
+}
+
+/* Cubrir el resto del contenido */
+.content {
+    margin-top: 83px;
+    margin-right: 20px;
+    margin-left: 153.5px;
+    position: relative;
+    z-index: 2;
+    border: #000000;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* Ajusta el ancho de la sección */
+
+    /* Asegura que el contenido esté por encima del fondo blanco */
+}
+
+/* Estilo para los encabezados h1 */
+h1 {
+    font-family: 'Sparkling Horizon', sans-serif;
+    font-size: 130px;
+    font-weight: bold;
+    color: #004aad;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+
+
+.Caja {
+    background-color: #009cf7;
+
+    border: 20px rgba(0, 0, 0, 0);
+    border-radius: 20px;
+
+    position: relative;
+    top: 21%;
+    left: 385px;
+
+    width: 240px;
+
+    text-align: center;
+
+    margin: 10px 0;
+    z-index: 2;
+}
+
+.Caja a {
+    display: block;
+    /* Hace que el enlace ocupe todo el ancho de la caja */
+
+
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    padding: 10px;
+    /* Aumenta el área clicable */
+    background-color: #3d57ff;
+
+    border-radius: 40px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+.Caja a:hover {
+
+    box-shadow: 0 0 10px 10px rgb(255, 255, 255);
+
+}
+
+
+
+a {
+    color: #e5f6ff;
+}
+
+/* Estilo de la sección de la cuenta regresiva */
+#countdown {
+    width: 82.6%;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #3d57ff;
+    position: absolute;
+    top: 629px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-bottom: 2px #72cbff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.countdown-section {
+    z-index: 1;
+    width: 90%;
+    height: 600px;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: #72cbff;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.countdown-section:hover {
+    transform: translate(-50%, -50%) translateY(-20px);
+    /* El div se eleva 20px hacia arriba */
+    box-shadow: 0px 10px 30px rgba(0, 188, 212, 0.5);
+    /* Sombras para darle más profundidad */
+}
+
+
+#llevar {
+    top: 150px;
+    left: 0px;
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#invitation {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    text-align: center;
+    top: 60px;
+    left: 0px;
+}
+
+.letra {
+    position: relative;
+    top: 500px;
+    left: 0px;
+}
+
+/* Animación para el icono de scroll */
+.scroll-down {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #004aad;
+    position: absolute;
+    bottom: -30%;
+    left: 45%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilo para la sección de invitación */
+#invitation {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+#cover .cover-text p {
+    font-family: 'SimpleNote', sans-serif;
+    font-size: 35px;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
