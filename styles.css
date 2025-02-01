@@ -13,6 +13,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Cursiva';
+    src: url('Fonts/BeautyDemo.otf')format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Estilo general para el body */
 body {
     font-family: 'Poppins', sans-serif;
@@ -27,6 +34,8 @@ body {
     min-height: 100vh;
     justify-content: center;
     padding-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -39,6 +48,16 @@ body {
     border: 15px solid #1a58cf;
     border-radius: 60px;
     box-shadow: 0 0 30px 10px rgb(57, 90, 219);
+}
+
+.white-background1 {
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+    border: 15px solid #1a58cf;
+    border-radius: 60px;
+    box-shadow: 0 0 30px 10px rgb(57, 90, 219);
+    margin-bottom: 10%;
 }
 
 #cover {
@@ -167,12 +186,33 @@ body {
     text-align: center;
 }
 
+#llevar h3 {
+    font-family: 'Cursiva';
+    font-weight: 500;
+    font-size: 2.5em;
+}
 
-#llevar h3 {}
+#invitation h2 {
+    font-family: 'Cursiva';
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
 
 .letra {
     text-align: center;
     margin-bottom: 20px;
+    margin: 0%;
+}
+
+.letra h3 {
+    font-family: 'Cursiva';
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+.letra h4 {
+    margin: 0%;
 }
 
 h3 {
@@ -181,7 +221,39 @@ h3 {
 }
 
 /* Media query para dispositivos móviles */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+    .white-background {
+        width: 90%;
+        border: 7px solid #1a59cf00;
+        box-shadow: 0 0 0px 0px rgba(57, 89, 219, 0);
+        background-color: rgb(255, 255, 255, 0);
+    }
+
+    .white-background1 {
+        width: 90%;
+        border: 7px solid #0b00e2
+    }
+
+    .countdown-section {
+        width: 100%;
+        margin-bottom: 10%;
+        outline: 7px solid #1a58cf;
+        box-shadow: 0 0 85px 5px #a9f1ff;
+    }
+
+    #secondpart {
+        width: 100%;
+        outline: 7px solid #1a58cf;
+        box-shadow: 0 0 65px 2px #0b00e2;
+    }
+
+    #countdown {
+        background-color: #00000000;
+        padding: 0%;
+    }
+
+
     #cover h1 {
         font-size: 3em;
     }
@@ -195,8 +267,27 @@ h3 {
         padding: 8px 16px;
     }
 
+    #invitation h2 {
+        font-size: 2em;
+    }
 
-    #llevar {
+    #invitation p {
+        font-size: 0.65em;
+    }
+
+    #llevar h3 {
+        font-size: 1.8em;
+    }
+
+    #llevar h2 {
         font-size: 0.9em;
+    }
+
+    #llevar p {
+        font-size: 1em;
+    }
+
+    .letra h3 {
+        font-size: 1.8em;
     }
 }
