@@ -220,6 +220,13 @@ h3 {
     margin: 0px;
 }
 
+#confirmar h2 {
+    font-weight: 50;
+    font-size: 1em;
+    text-align: center;
+
+}
+
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
 
